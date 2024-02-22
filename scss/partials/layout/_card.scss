@@ -1,9 +1,36 @@
 @use '../abstracts' as *;
 
 .card{
-    display: flex;
-    flex-direction: column;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-inline-size: 21.875rem;
+        margin: 1rem;
+    }
+
     border-radius: 1.5rem;
     background-color: $clr-neutral-100;
+    color: $clr-primary;
     
+    &__image{
+        max-inline-size: 25rem;
+        margin-block-end: 2rem;
+        overflow: hidden;
+        border-radius: 1rem;
+    }
+
+    &__title{
+        margin: 0.3rem;
+        margin-block-end: 0.5rem;
+        text-align: center;
+        justify-self: center;
+    }
+
+    &__description{
+        margin: 1rem;
+        color: lighten($clr-neutral-300, 10%);
+        font-size: $font-size-lg    ;
+        text-align: center;
+    }
 }

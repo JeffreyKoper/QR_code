@@ -57,8 +57,36 @@ body {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   border-radius: 1.5rem;
   background-color: hsl(0deg 0% 100%);
+  color: hsl(218deg 44% 22%);
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-inline-size: 21.875rem;
+  margin: 1rem;
+}
+
+.card__image {
+  max-inline-size: 25rem;
+  margin-block-end: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.card__title {
+  margin: 0.3rem;
+  margin-block-end: 0.5rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.card__description {
+  margin: 1rem;
+  color: #98a1b3;
+  font-size: 1.25rem;
+  text-align: center;
 }
