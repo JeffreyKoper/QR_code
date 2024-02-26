@@ -77,9 +77,17 @@ body {
   border-radius: 1rem;
 }
 
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: 0.5rem;
+}
+
 .card__title {
   margin: 0.3rem;
   margin-block-end: 0.5rem;
+  font-size: 0.8rem;
   text-align: center;
   justify-self: center;
 }
@@ -87,6 +95,6 @@ body {
 .card__description {
   margin: 1rem;
   color: #98a1b3;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   text-align: center;
 }

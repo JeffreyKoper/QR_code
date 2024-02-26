@@ -20,9 +20,17 @@
         border-radius: 1rem;
     }
 
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 0.5rem;
+    }
+
     &__title{
         margin: 0.3rem;
         margin-block-end: 0.5rem;
+        font-size: $font-size-sm;
         text-align: center;
         justify-self: center;
     }
@@ -30,7 +38,7 @@
     &__description{
         margin: 1rem;
         color: lighten($clr-neutral-300, 10%);
-        font-size: $font-size-lg    ;
+        font-size: $font-size-lg;
         text-align: center;
     }
 }
